@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Fav Icon -->
     <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,10 +15,87 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Font Awesome CDN -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <!-- Shared Styles -->
+    <style>
+        img,
+        video {
+            object-fit: cover;
+        }
+
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <!-- Shared Styles -->
+    <!-- Shared Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "nav-bg": "#F85559",
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Shared Colors -->
 </head>
 
 <body>
+    <header class="font-lato">
+        <!-- Navbar starts here -->
+        <nav class="container mx-auto max-w-screen-xl md:py-4 py-2 mx:px-0 px-2">
+            <div class="navbar md:bg-[#F85559] rounded-full py-5 md:flex-row ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="font-medium hover:scale-90 duration-300"><a href="">Home</a></li>
+                            <li class="font-medium hover:scale-90 duration-300"><a href="">About Us</a></li>
+                            <li class="font-medium hover:scale-90 duration-300"><a href="">Shop</a></li>
+                            <li class="font-medium hover:scale-90 duration-300"><a href="">All Fruits</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="hidden md:flex justify-center items-center gap-6 pl-8">
+                        <li class="text-white font-medium hover:scale-90 duration-300"><a href="">Home</a></li>
+                        <li class="text-white font-medium hover:scale-90 duration-300"><a href="">About Us</a></li>
+                        <li class="text-white font-medium hover:scale-90 duration-300"><a href="">Shop</a></li>
+                        <li class="text-white font-medium hover:scale-90 duration-300"><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center ">
+                    <div class="flex justify-center items-center gap-2">
+                        <img src="./images/logo.png" alt="" class="h-[50px]">
+                        <h3 class="text-2xl md:text-3xl font-bold md:text-white">Fruit Burst</h3>
+                    </div>
+                </div>
+                <div class="navbar-end pr-8 lg:flex hidden">
+                    <input type="text" placeholder="Search here" class="input rounded-full w-3/4 max-w-xs" />
+                    <i class="fa-solid fa-magnifying-glass -translate-x-10"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar ends here -->
+    </header>
+    <main>
 
+    </main>
 </body>
 
 </html>
